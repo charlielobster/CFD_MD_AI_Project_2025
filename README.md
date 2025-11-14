@@ -5,10 +5,10 @@ For an Ubuntu 24.04 installation,
 
 ### Install Docker
 
-`
+```
 sudo apt update
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
-`
+```
 
 
 
