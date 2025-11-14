@@ -3,7 +3,7 @@ It may also require a docker installation, as this is the suggested way to use t
 
 For an Ubuntu 24.04 installation, 
 
-# Install Docker
+### Install Docker
 
 `
 sudo apt update
