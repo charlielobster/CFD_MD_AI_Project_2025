@@ -121,7 +121,7 @@ In a new file called `daemon.json` in `/etc/docker`, add the following:
 ```
 
 
-# Load the PhysicsNeMo Docker Container: 
+# Load and Run PhysicsNeMo Docker Container: 
 
 ```
 sudo docker run --gpus all --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 --runtime nvidia --rm -it nvcr.io/nvidia/physicsnemo/physicsnemo:25.06 bash
