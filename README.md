@@ -1,34 +1,43 @@
 This project requires the Nvidia PhysicsNeMo API. 
-It may also require a docker installation, as this is the suggested way to use the PhysicsNemo API for most cases, according to their documentation.
+It currently requires a docker installation, as this is the suggested way to use the PhysicsNemo API for most cases, according to their documentation.
 
-For an Ubuntu 24.04 installation, 
+Using the Ubuntu 24.04 installation described <a href="https://github.com/charlielobster/CUDA_NekRS.git">here</a>.
 
-Install Docker
+# Install PhysicsNeMo Prerequisites
 
-Official Install Docs here: https://docs.docker.com/desktop/setup/install/linux/
+The following steps are taken from the official docker installation docs <a href="https://docs.docker.com/desktop/setup/install/linux/">here</a>.
+
+## Install kvm
 
 On Ubuntu, Docker requires `kvm`
 
 ```
 sudo apt update
 sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager
+reboot
 ```
 
-I had to reboot before the connection to QEMU/KVM would take
+After a reboot so the connection to `QEMU/KVM` should take. Check with a call to `virt-manager`:
 
-https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+<img src="images/virt_manager.png" />
 
-From the above link, install docker via `apt`:
+## Install docker
+
+From the <a href="https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository">following</a> link, install docker via `apt`:
+
+Add Docker's official GPG key:
 
 ```
-# Add Docker's official GPG key:
 sudo apt update
 sudo apt install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 sudo chmod a+r /etc/apt/keyrings/docker.asc
+```
 
-# Add the repository to Apt sources:
+Add the repository to `apt` sources:
+
+```
 sudo tee /etc/apt/sources.list.d/docker.sources <<EOF
 Types: deb
 URIs: https://download.docker.com/linux/ubuntu
@@ -39,7 +48,7 @@ EOF
 sudo apt update
 ```
 
-Then install docker
+Now install docker:
 
 ```
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
@@ -54,13 +63,13 @@ Check its status:
 <img src="images/docker_status.png" />
 
 
-Check with a call to hello world:
+Check with a call to the hello world container:
 
 <img src="images/docker_hello_world.png" />
 
-Install Nvidia Container Toolkit using:
+## Install Nvidia Container Toolkit:
 
-https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
+From the Official Installation Docs found <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">here</a>.
 
 
 Prerequisites:
@@ -115,7 +124,7 @@ Add:
 In a new file called `daemon.json` in `/etc/docker`
 
 
-Then, attempt to load the PhysicsNeMo docker container: 
+# Load the PhysicsNeMo Docker Container: 
 
 ```
 sudo docker run --gpus all --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 --runtime nvidia --rm -it nvcr.io/nvidia/physicsnemo/physicsnemo:25.06 bash
@@ -123,4 +132,4 @@ sudo docker run --gpus all --shm-size=1g --ulimit memlock=-1 --ulimit stack=6710
 
 You should see something like this:
 
-<img src="images/physicsnemo_terminal.png">
+<img src="images/physicsnemo_terminal.png" />
