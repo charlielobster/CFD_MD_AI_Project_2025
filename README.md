@@ -58,27 +58,6 @@ Check with a call to hello world:
 
 <img src="images/docker_hello_world.png" />
 
-
-Got error: `unknown or invalid runtime name: nvidia`
-
-Configure the Docker Daemon to recognize the nvidia runtime. 
-
-Add:
-
-```
-{
-    "runtimes": {
-        "nvidia": {
-            "path": "nvidia-container-runtime",
-            "runtimeArgs": []
-        }
-    }
-}
-```
-In a new file called `daemon.json` in `/etc/docker`
-
-Got a new error:  `docker: Error response from daemon: could not select device driver "" with capabilities: [[gpu]]`
-
 Install Nvidia Container Toolkit using:
 
 https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
@@ -117,6 +96,23 @@ export NVIDIA_CONTAINER_TOOLKIT_VERSION=1.18.0-1
       libnvidia-container-tools=${NVIDIA_CONTAINER_TOOLKIT_VERSION} \
       libnvidia-container1=${NVIDIA_CONTAINER_TOOLKIT_VERSION}
 ```
+
+
+Configure the Docker Daemon to recognize the nvidia runtime. 
+
+Add:
+
+```
+{
+    "runtimes": {
+        "nvidia": {
+            "path": "nvidia-container-runtime",
+            "runtimeArgs": []
+        }
+    }
+}
+```
+In a new file called `daemon.json` in `/etc/docker`
 
 
 Then, attempt to load the PhysicsNeMo docker container: 
