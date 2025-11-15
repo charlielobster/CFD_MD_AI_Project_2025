@@ -69,8 +69,7 @@ Check with a call to the hello world container:
 
 ## Install Nvidia Container Toolkit:
 
-From the Official Installation Docs found <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">here</a>.
-
+Taken from the official install docs <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">here</a>.
 
 Prerequisites:
 
