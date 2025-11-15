@@ -51,3 +51,5 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 Check with a call to hello world:
 
 <img src="images/docker_hello_world.png" />
+
+Then install Nvidia Container Toolkit
