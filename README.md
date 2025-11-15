@@ -14,7 +14,11 @@ sudo apt update
 sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager
 ```
 
+I had to reboot before the usermod settings would take
+
 https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+
+
 
 
 
