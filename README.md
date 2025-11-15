@@ -1,11 +1,14 @@
-This project requires the Nvidia PhysicsNeMo API. 
-It currently requires a docker installation, as this is the suggested way to use the PhysicsNemo API for most cases, according to their documentation.
+# AI Modeling Computational Physics with Nvidia PhysicsNeMo
 
-Using the Ubuntu 24.04 installation described <a href="https://github.com/charlielobster/CUDA_NekRS.git">here</a>.
+<a href="https://developer.nvidia.com/physicsnemo">PhysicsNeMo Official Site</a>
+
+This project is a general survey of and experimental test-bed using the Nvidia PhysicsNeMo API. It currently requires a Docker installation, as this is the suggested way to use the PhysicsNemo API for most cases, according to their documentation.
+
+Uses an Nvidia driver-based Ubuntu 24.04 installation described <a href="https://github.com/charlielobster/CUDA_NekRS.git">here</a>.
 
 # Install PhysicsNeMo Prerequisites
 
-The following steps are taken from the official docker installation docs <a href="https://docs.docker.com/desktop/setup/install/linux/">here</a>.
+The following steps are taken from the official Docker install docs <a href="https://docs.docker.com/desktop/setup/install/linux/">here</a>.
 
 ## Install kvm
 
@@ -48,7 +51,7 @@ EOF
 sudo apt update
 ```
 
-Now install docker:
+Now install Docker:
 
 ```
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
@@ -63,11 +66,11 @@ Check its status:
 <img src="images/docker_status.png" />
 
 
-Check with a call to the hello world container:
+Check with a call to run the hello world container:
 
 <img src="images/docker_hello_world.png" />
 
-## Install Nvidia Container Toolkit:
+## Install Nvidia Container Toolkit
 
 Taken from the official install docs <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">here</a>.
 
@@ -105,7 +108,7 @@ export NVIDIA_CONTAINER_TOOLKIT_VERSION=1.18.0-1
       libnvidia-container1=${NVIDIA_CONTAINER_TOOLKIT_VERSION}
 ```
 
-Configure the Docker Daemon to recognize the nvidia runtime. 
+Configure the Docker daemon to recognize the nvidia runtime. 
 
 In a new file called `daemon.json` in `/etc/docker`, add the following:
 
@@ -121,7 +124,7 @@ In a new file called `daemon.json` in `/etc/docker`, add the following:
 ```
 
 
-# Load and Run PhysicsNeMo Docker Container: 
+# Load and Run PhysicsNeMo Docker Container
 
 ```
 sudo docker run --gpus all --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 --runtime nvidia --rm -it nvcr.io/nvidia/physicsnemo/physicsnemo:25.06 bash
@@ -130,3 +133,4 @@ sudo docker run --gpus all --shm-size=1g --ulimit memlock=-1 --ulimit stack=6710
 You should see something like this:
 
 <img src="images/physicsnemo_terminal.png" />
+
