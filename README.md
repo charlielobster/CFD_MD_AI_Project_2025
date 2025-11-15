@@ -52,6 +52,13 @@ Check with a call to hello world:
 
 <img src="images/docker_hello_world.png" />
 
+
+Then, attempt to load the PhysicsNeMo docker container: 
+
+```
+sudo docker run --gpus all --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 --runtime nvidia --rm -it nvcr.io/nvidia/physicsnemo/physicsnemo:25.06 bash
+```
+
 Got error: `unknown or invalid runtime name: nvidia`
 
 Configured the Docker Daemon to recognize the nvidia runtime: 
