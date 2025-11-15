@@ -105,10 +105,9 @@ export NVIDIA_CONTAINER_TOOLKIT_VERSION=1.18.0-1
       libnvidia-container1=${NVIDIA_CONTAINER_TOOLKIT_VERSION}
 ```
 
-
 Configure the Docker Daemon to recognize the nvidia runtime. 
 
-Add:
+In a new file called `daemon.json` in `/etc/docker`, add the following:
 
 ```
 {
@@ -120,7 +119,6 @@ Add:
     }
 }
 ```
-In a new file called `daemon.json` in `/etc/docker`
 
 
 # Load the PhysicsNeMo Docker Container: 
