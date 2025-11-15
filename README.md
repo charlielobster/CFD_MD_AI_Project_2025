@@ -53,3 +53,7 @@ Check with a call to hello world:
 <img src="images/docker_hello_world.png" />
 
 Then install Nvidia Container Toolkit
+
+For Ubuntu, using:
+ 
+https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
