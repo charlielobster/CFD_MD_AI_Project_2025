@@ -1,5 +1,5 @@
 This project requires the Nvidia PhysicsNeMo API. 
-It may also require a docker installation, as this is the suggested way to use the PhysicsNemo API, according to their documentation.
+It may also require a docker installation, as this is the suggested way to use the PhysicsNemo API for most cases, according to their documentation.
 
 For an Ubuntu 24.04 installation, 
 
@@ -59,12 +59,6 @@ Check with a call to hello world:
 <img src="images/docker_hello_world.png" />
 
 
-Then, attempt to load the PhysicsNeMo docker container: 
-
-```
-sudo docker run --gpus all --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 --runtime nvidia --rm -it nvcr.io/nvidia/physicsnemo/physicsnemo:25.06 bash
-```
-
 Got error: `unknown or invalid runtime name: nvidia`
 
 Configure the Docker Daemon to recognize the nvidia runtime. 
@@ -123,3 +117,14 @@ export NVIDIA_CONTAINER_TOOLKIT_VERSION=1.18.0-1
       libnvidia-container-tools=${NVIDIA_CONTAINER_TOOLKIT_VERSION} \
       libnvidia-container1=${NVIDIA_CONTAINER_TOOLKIT_VERSION}
 ```
+
+
+Then, attempt to load the PhysicsNeMo docker container: 
+
+```
+sudo docker run --gpus all --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 --runtime nvidia --rm -it nvcr.io/nvidia/physicsnemo/physicsnemo:25.06 bash
+```
+
+You should see something like this:
+
+<img src="images/physicsnemo_terminal.png">
