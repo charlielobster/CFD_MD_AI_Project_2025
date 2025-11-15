@@ -52,8 +52,28 @@ Check with a call to hello world:
 
 <img src="images/docker_hello_world.png" />
 
-Then install Nvidia Container Toolkit
+Got error: `unknown or invalid runtime name: nvidia`
 
-For Ubuntu, using:
- 
+Configured the Docker Daemon to recognize the nvidia runtime: 
+
+added:
+
+```
+{
+    "runtimes": {
+        "nvidia": {
+            "path": "nvidia-container-runtime",
+            "runtimeArgs": []
+        }
+    }
+}
+```
+In a file called `daemon.json` in `/etc/docker`
+
+Got a new error:  `docker: Error response from daemon: could not select device driver "" with capabilities: [[gpu]]`
+
+Install Nvidia Container Toolkit
+
+Using:
+
 https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
