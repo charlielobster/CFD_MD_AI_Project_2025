@@ -45,16 +45,9 @@ Then install docker
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
+<img src="images/docker_status.png" />
 
-AI Suggestions for Docker:
 
-Update packages and certificates
-```
-sudo apt update
-sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
-```
-Add Docker's official GPG key
-```
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-```
+Check with a call to hello world:
 
+<img src="images/docker_hello_world.png" />
