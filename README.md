@@ -17,7 +17,7 @@ sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils vir
 reboot
 ```
 
-After a reboot so the connection to `QEMU/KVM` should take. Check with a call to `virt-manager`:
+After a reboot, the connection to `QEMU/KVM` should take. Check with a call to `virt-manager`:
 
 <img src="images/virt_manager.png" />
 
