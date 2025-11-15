@@ -24,7 +24,7 @@ After a reboot, the connection to `QEMU/KVM` should take. Check with a call to `
 
 <img src="images/virt_manager.png" />
 
-## Install docker
+## Install Docker
 
 From the <a href="https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository">following</a> link, install docker via `apt`:
 
