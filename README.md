@@ -45,6 +45,12 @@ Then install docker
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
+Check its status:
+
+```
+ sudo systemctl status docker
+```
+
 <img src="images/docker_status.png" />
 
 
@@ -61,9 +67,9 @@ sudo docker run --gpus all --shm-size=1g --ulimit memlock=-1 --ulimit stack=6710
 
 Got error: `unknown or invalid runtime name: nvidia`
 
-Configured the Docker Daemon to recognize the nvidia runtime: 
+Configure the Docker Daemon to recognize the nvidia runtime. 
 
-added:
+Add:
 
 ```
 {
@@ -75,7 +81,7 @@ added:
     }
 }
 ```
-In a file called `daemon.json` in `/etc/docker`
+In a new file called `daemon.json` in `/etc/docker`
 
 Got a new error:  `docker: Error response from daemon: could not select device driver "" with capabilities: [[gpu]]`
 
