@@ -62,7 +62,7 @@ Check its status:
 
 Check with a call to run the hello world container:
 
-<img src=..images/docker_hello_world.png />
+<img src=../images/docker_hello_world.png />
 
 ### Install Nvidia Container Toolkit
 
@@ -117,8 +117,7 @@ In a new file called `daemon.json` in `/etc/docker`, add the following:
 }
 ```
 
-
-### Load and Run PhysicsNeMo Docker Container
+## Load and Run PhysicsNeMo Docker Container
 
 ```
 sudo docker run --gpus all --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 --runtime nvidia --rm -it nvcr.io/nvidia/physicsnemo/physicsnemo:25.06 bash
