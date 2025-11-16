@@ -17,11 +17,13 @@ sudo docker run --gpus all --shm-size=1g --ulimit memlock=-1 --ulimit stack=6710
 ### Save Container Into Image
 
 Get Docker Container ID
+
 ```
 sudo docker ps
 ```
 
 Save Changes to Docker Image
+
 ```
 sudo docker commit <container_id> image:version
 ```

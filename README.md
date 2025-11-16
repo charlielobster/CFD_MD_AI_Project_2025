@@ -7,7 +7,7 @@ This project is a general survey of and an experimental test-bed for the Physics
 ## Project Milestones
 
 <a href=milestones/RunDockerImage.md>Run PhysicsNemo Docker Container</a><br/>
-<a href=milestones/FirstWalkthrough.md>First Walkthrough - Training Set</a><br/>
+<a href=milestones/FirstWalkthrough.md>First Walkthrough - Training Recipe</a><br/>
 
 
 ## Drill-Downs
