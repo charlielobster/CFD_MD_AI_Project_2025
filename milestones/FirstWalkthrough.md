@@ -2,4 +2,4 @@ In this milestone, let's implement the <a href=https://docs.nvidia.com/physicsne
 
 It is based on this <a href=../papers/2010.08895v3.pdf>paper</a> about Fourier Neural Operators (FNO)s.
 
-This paper deserves a drill-down! In addition to Darcy 2D, the paper also benchmarks against Burger and Navier-Stokes. 
+This paper deserves a drill-down! In addition to Darcy 2D, the paper also benchmarks against Burgers and Navier-Stokes Equations. 
