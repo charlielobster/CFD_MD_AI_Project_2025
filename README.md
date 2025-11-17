@@ -4,7 +4,7 @@
 
 This project is a general survey of and an experimental test-bed for the PhysicsNeMo API. According to the documentation, their Docker image is the preferred way to use the PhysicsNemo API for most cases. Original host is a manual CUDA Driver Ubuntu 24.04 installation described <a href=https://github.com/charlielobster/CUDA_NekRS.git>here</a>.
 
-I am just starting my investigations, but so far, this mainly seems to be about how to use Fourier Neural Operators (FNOs) and related AI models to solve Second Order PDEs. Then it is about how to use these FNOs to augment the results from standard CFD and MD algorithms, those traditional solvers for Navier-Stokes, Lattice Boltzmann, etc. With it, we can make predictions for arbitrary times, and the output is continuous and mesh-invariant, and therefore scalable to arbitrary resolution.
+This mainly seems to be about how to use Fourier Neural Operators (FNOs) and related AI models to solve Second Order PDEs. Then it is about how to use these FNOs to augment results from standard CFD and MD algorithms, those traditional solvers for Navier-Stokes, Lattice Boltzmann, etc. Its output is continuous and mesh-invariant, and therefore scalable to arbitrary resolution and times.
 
 ## Project Milestones
 
