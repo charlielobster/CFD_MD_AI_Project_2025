@@ -9,8 +9,8 @@ This project is a general survey of and an experimental test-bed for the Physics
 <a href=milestones/RunDockerImage.md>Run PhysicsNemo Docker Container</a><br/>
 <a href=milestones/FirstWalkthrough.md>First Walkthrough - Training Recipe</a><br/>
 
-
 ## Drill-Downs
+
 <a href=drilldowns/Docker.md>Docker Drill-Down</a><br/>
-<a href=drilldowns/DarcyFno.md>Darcy 2D Fourier Neural Operator</a><br/>
-<a href=drilldowns/NoDocker.md>Direct Installation? Pros and Cons</a>
+<a href=drilldowns/LBM.md>Lattice Bolzmann Solvers</a><br/>
+<a href=drilldowns/NoDocker.md>Direct Installation? True Tales of Pros and Cons</a>
