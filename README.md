@@ -2,7 +2,9 @@
 
 <a href=https://developer.nvidia.com/physicsnemo>NVIDIA PhysicsNeMo Official Site</a>
 
-This project is a general survey of and an experimental test-bed for the PhysicsNeMo API. According to the documentation, their Docker image is the preferred way to use the PhysicsNemo API for most cases. Host has a manual CUDA Driver Ubuntu 24.04 installation described <a href=https://github.com/charlielobster/CUDA_NekRS.git>here</a>.
+This project is a general survey of and an experimental test-bed for the PhysicsNeMo API. According to the documentation, their Docker image is the preferred way to use the PhysicsNemo API for most cases. Original host is a manual CUDA Driver Ubuntu 24.04 installation described <a href=https://github.com/charlielobster/CUDA_NekRS.git>here</a>.
+
+I am just starting my investigations, but this is mainly about how to use Fourier Neural Operators (FNOs) and related AI Models that solve Second Order PDEs to augment the results from standard CFD and MD algorithms, those traditional solvers for Naviers-Stokes, Lattice Boltzmann, etc. Apparently it will be easier to make predictions at arbitrary time-jumps using the output of these AI Models, and their output also has the advantage of being continuous and scalable in ways traditional algorithms cannot.
 
 ## Project Milestones
 
@@ -13,5 +15,5 @@ This project is a general survey of and an experimental test-bed for the Physics
 
 <a href=drilldowns/Docker.md>Docker Drill-Down</a><br/>
 <a href=drilldowns/Darcy.md>2D Darcy Flows</a><br/>
-<a href=drilldowns/LBM.md>Lattice Bolzmann Solvers</a><br/>
+<a href=drilldowns/LBM.md>Lattice Boltzmann Solvers</a><br/>
 <a href=drilldowns/NoDocker.md>Direct Installation? True Tales of Pros and Cons</a>
