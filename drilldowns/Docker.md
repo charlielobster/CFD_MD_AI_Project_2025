@@ -11,8 +11,23 @@ Docker is used for running a virtual machine (vm) inside a host. In Docker, the 
 ### Run Latest PhysicsNeMo Image
 
 ```
-sudo docker run --gpus all --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 --runtime nvidia --rm -it nvcr.io/nvidia/physicsnemo/physicsnemo:25.06 bash
+sudo docker run \
+    --gpus all \
+    --shm-size=1g \
+    --ulimit memlock=-1 \
+    --ulimit stack=67108864 \
+    --runtime nvidia \
+    --rm \
+    -it \
+    nvcr.io/nvidia/physicsnemo/physicsnemo:25.06 \
+    bash
 ```
+Let's break this down, 
+
+`--rm` Automatically remove this container and its associated anonymous volumes when exiting<br/>
+`-it` Interactive, allocate a pseudo-TTY<br/>
+`--shm-size=1g` Allocate 1 gig to `/dev/shm`<br/>
+`--runtime nvidia` Point to the NVIDIA Container Toolkit
 
 ### Save Container Into Image
 
@@ -29,3 +44,10 @@ sudo docker commit <container_id> image:version
 ```
 
 ### Share Folder Between Container and Image
+
+We need to add `-v` to the docker run call.
+
+```
+-v /home/user/my_data:/app/data my_app_image
+```
+Here, `/home/user/my_data` is the folder name on the host, and `/app/data` will be the folder name in the container.
