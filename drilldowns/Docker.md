@@ -27,7 +27,7 @@ Let's break this down,
 `--rm` Automatically remove this container and its associated anonymous volumes when exiting<br/>
 `-it` Interactive, allocate a pseudo-TTY<br/>
 `--shm-size=1g` Allocate 1 gig to `/dev/shm`<br/>
-`--runtime nvidia` Point to the NVIDIA Container Toolkit
+`--runtime nvidia` Use the NVIDIA Container Toolkit runtime
 
 ### Save Container Into Image
 
