@@ -27,7 +27,7 @@ sudo docker run \
 `--runtime nvidia` Use the NVIDIA Container runtime<br/>
 `--rm` Automatically remove this container and its associated anonymous volumes when exiting<br/>
 `-it` Interactive, allocate a pseudo-TTY<br/>
-`-v host_folder:container_folder` Share folder between container and image<br/>
+`-v host_folder:container_folder` Share folder between host and container<br/>
 `nvcr.io/nvidia/physicsnemo/physicsnemo:25.06` Selected image to run<br/>
 `bash` Selected terminal shell language<br/>
 
