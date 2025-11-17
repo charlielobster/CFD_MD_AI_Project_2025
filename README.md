@@ -12,5 +12,6 @@ This project is a general survey of and an experimental test-bed for the Physics
 ## Drill-Downs
 
 <a href=drilldowns/Docker.md>Docker Drill-Down</a><br/>
+<a href=drilldowns/Darcy.md>2D Darcy Flows</a><br/>
 <a href=drilldowns/LBM.md>Lattice Bolzmann Solvers</a><br/>
 <a href=drilldowns/NoDocker.md>Direct Installation? True Tales of Pros and Cons</a>
