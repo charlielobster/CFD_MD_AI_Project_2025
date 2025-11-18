@@ -10,5 +10,5 @@ The paper points out conventional solvers like Finite Element, Finite Difference
 
 The paper goes on to describe Neural Operators as a promising new methodology that is meshless and infinite-dimensional, and reviews existing Fourier Transform usage in ML. The paper's innovation is to define their neural operator's kernel integral operator in Fourier space. It gets pretty mathy with all the gory details. Basically this involves wedging the Fourier space stuff (a bunch of FFTs and convolutions) into the Neural Operator definitions (a bunch of definitions including kernel integral operators, updates, and activation functions). It reviews FNO's three key features: parameterization of R, invariance to discretization, quasi-linear complexity. 
 
-In addition to Darcy Flow, the paper also benchmarks against the Burgers and Navier-Stokes Equations. It compares FNO results to other neural network architectures and defines the equations.
+In addition to Darcy Flow, the paper also benchmarks against the Burgers and Navier-Stokes Equations, all of which it spends some time defining. It benchmarks FNO results to other neural network architectures. It concludes with a section on two interesting features, that FNO is capable of zero-shot super-resolution, and of solving the Bayesian Inverse Problem.
 
