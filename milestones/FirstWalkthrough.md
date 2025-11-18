@@ -1,6 +1,4 @@
-In this milestone, let's implement the <a href=https://docs.nvidia.com/physicsnemo/latest/user-guide/simple_training_example.html>Training Recipe</a> tutorial. 
-
-It is based on this paper:<br/>
+In this milestone, let's implement the <a href=https://docs.nvidia.com/physicsnemo/latest/user-guide/simple_training_example.html>Training Recipe</a> tutorial, based on the following paper:<br/>
 <a href=../papers/2010.08895v3.pdf>The Fourier Neural Operator for Parametric Partial Differential Equations</a><br/>
 A conference paper at ICLR 2021 by Li, Kovachki, Azizzadenesheli, et al. 
 
