@@ -6,7 +6,7 @@ This project is a general survey of and an experimental test-bed for the Physics
 
 Some of these examples are about how to use Fourier Neural Operators (FNOs) and related AI operators to solve second order PDEs. Use these FNOs to augment results from standard CFD and MD algorithms, those traditional discrete PDE solvers for Navier-Stokes, etc. The output of a FNO-based AI model is continuous and mesh-invariant, and therefore scalable to arbitrary resolution and times.
 
-To code along with this repository, fork NVIDIA's PhysicsNeMo <a href=https://github.com/nvidia/physicsnemo.git>repository</a>, or review my <a href=https://github.com/charlielobster/physicsnemo.git>fork</a> for any saved artifacts, results, or modifications. I've also <a href=https://github.com/charlielobster/PhysicsNeMo-Sym.git>forked </a> NVIDIA's <a href=https://github.com/nvidia/PhysicsNeMo-Sym>PhysicsNeMo-Sym</a> similarly.
+To code along with this repository, fork NVIDIA's <a href=https://github.com/nvidia/physicsnemo.git>PhysicsNeMo</a>, or review my <a href=https://github.com/charlielobster/physicsnemo.git>fork</a> for any saved artifacts, results, or modifications. I've also <a href=https://github.com/charlielobster/PhysicsNeMo-Sym.git>forked </a> NVIDIA's <a href=https://github.com/nvidia/PhysicsNeMo-Sym>PhysicsNeMo-Sym</a> similarly.
 
 ## Project Milestones
 
