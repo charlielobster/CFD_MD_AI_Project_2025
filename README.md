@@ -1,4 +1,4 @@
-# CFD and MD AI Modeling with PhysicsNeMo API
+# CFD and MD AI Modeling with the PhysicsNeMo API
 
 <a href=https://developer.nvidia.com/physicsnemo>NVIDIA PhysicsNeMo Official Site</a>
 
@@ -16,7 +16,11 @@ Fork the PhysicsNeMo examples <a href=https://github.com/nvidia/physicsnemo.git>
 ## Drill-Downs
 
 <a href=drilldowns/Docker.md>Docker Drill-Down</a><br/>
-<a href=drilldowns/FNOs.md>Fourier Neural Operators</a><br/>
 <a href=drilldowns/Darcy.md>2D Darcy Flows</a><br/>
 <a href=drilldowns/LBM.md>Lattice Boltzmann Solvers</a><br/>
 
+
+## Related Papers and Summaries
+
+<a href=papers/2010.08895v3.pdf>The Fourier Neural Operator for Parametric Partial Differential Equations</a> by Li et al. 2021<br/>
+<a href=summaries/FNOs.md>FNO Summary</a><br/>
