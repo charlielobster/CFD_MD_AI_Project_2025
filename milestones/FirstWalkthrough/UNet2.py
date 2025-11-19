@@ -1,3 +1,5 @@
+# more of the same solution to nobody's problem
+# convert the torch.nn.Module into a physicsnemo.models.module
 -    import torch.nn as nn
 +    from dataclasses import dataclass
 +    from physicsnemo.models.meta import ModelMetaData
