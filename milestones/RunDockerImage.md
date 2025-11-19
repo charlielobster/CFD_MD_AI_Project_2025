@@ -45,10 +45,11 @@ EOF
 sudo apt update
 ```
 
-Now install Docker:
+Now install Docker and reboot.
 
 ```
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+reboot
 ```
 
 Check its status:
@@ -61,6 +62,10 @@ Check its status:
 
 
 Check with a call to run the hello world container:
+
+```
+sudo docker run hello-world
+```
 
 <img src=../images/docker_hello_world.png />
 
@@ -104,7 +109,7 @@ export NVIDIA_CONTAINER_TOOLKIT_VERSION=1.18.0-1
 
 Configure the Docker daemon to recognize the nvidia runtime. 
 
-In a new file called `daemon.json` in `/etc/docker`, add the following:
+In a new file called `daemon.json` in `/etc/docker`, add the following (will need root):
 
 ```
 {
@@ -127,3 +132,4 @@ You should see something like this:
 
 <img src=../images/physicsnemo_terminal.png />
 
+Use `-v` to share a volume between docker and host (see <a href=../drilldowns/Docker.md>Docker Drill-Down</a>).
