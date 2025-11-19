@@ -1,4 +1,4 @@
-# completely irrelevant script for converting torch.nn.Modules into some other required data structure
+# convert torch.nn.Modules into some other required data structure
 import torch.nn as nn
 
 import physicsnemo
