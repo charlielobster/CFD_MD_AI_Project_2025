@@ -2,7 +2,7 @@
 
 <a href=https://developer.nvidia.com/physicsnemo>NVIDIA PhysicsNeMo Official Site</a>
 
-This project is a general survey of and an experimental test-bed for the PhysicsNeMo platform and API. According to the documentation, their Docker image is the preferred way to use the PhysicsNemo API for most cases. Original host is an Ubuntu 24.04 installation with CUDA Drivers.
+This project is a general survey of and an experimental test-bed for the PhysicsNeMo platform and API. According to the documentation, their Docker image is the preferred way to use the PhysicsNemo API for most cases. Original host is an Ubuntu 24.04 installation with current CUDA Drivers.
 
 Some of the examples in this repository are about how to use Graph Neural Networks (GNNs), Physics-Informed Neural Networks (PINNs), Fourier Neural Operators (FNOs), perhaps Convolutional Neural Networks (CNNs), or related software components to solve second order PDEs. Use these tools to augment results from standard CFD and MD algorithms, the traditional discrete step-wise PDE solvers for Navier-Stokes, LBM, etc. There are good reasons to do this because, for example, the output of a FNO-based AI model is continuous and mesh-invariant, and therefore scalable to arbitrary resolution and times.
 
