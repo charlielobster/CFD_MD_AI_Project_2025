@@ -3,7 +3,7 @@ A conference paper at ICLR 2021 by Li, Kovachki, Azizzadenesheli, et al.
 
 The paper's innovation is the Fourier Neural Operator (FNO). 
 
-The paper points out conventional solvers like Finite Element, Finite Difference, Lattice Boltzmann, Spectral Element, and similar solvers do so by discretizing space. In that step, there is a trade-off that forces a resolution on the results. In a similar vein, all the time steps less than some time t must be computed first in order to determine the results at time t. The paper points out the need for a continuous algorithm to do all that so that arbitrary resolutions and times can be determined instead. 
+The paper points out conventional solvers like Finite Element, Finite Difference, Lattice Boltzmann, Spectral Element, and similar solvers do so by discretizing space. In that step, there is a trade-off that forces a resolution on the results. In a similar vein, all the time steps less than some time t must be computed first before the results at t can be found. The paper points out the need for a continuous algorithm so that arbitrary resolutions and times can be determined instead. 
 
 Data-driven Machine Learning (ML) and classical neural networks traditionally exist in finite-dimensional spaces, so although they are very good solvers at the resolution of the training data, they are not very good at solving for other resolutions. The paper drills down into two existing PDE ML solvers, Finite-dimensional Operators and Neural-FEM. The former are by definition mesh-dependent, and the latter, although mesh-independent and accurate, suffer from limitations due to the classical nature of their approach. 
 
