@@ -1,5 +1,6 @@
-### A Brief Summary of <a href=../papers/2010.08895v3.pdf>The Fourier Neural Operator for Parametric Partial Differential Equations</a><br/>
-A conference paper at ICLR 2021 by Li, Kovachki, Azizzadenesheli, et al. 
+### A Brief Summary of 
+### <a href=../papers/2010.08895v3.pdf>The Fourier Neural Operator for Parametric Partial Differential Equations</a><br/>
+ A conference paper at ICLR 2021 by Li, Kovachki, Azizzadenesheli, et al. 
 
 The paper's innovation is the Fourier Neural Operator (FNO). 
 
