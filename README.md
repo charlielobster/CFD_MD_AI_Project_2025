@@ -1,4 +1,4 @@
-# CFD and MD AI Modeling with the PhysicsNeMo API
+# CFD and MD AI Modeling with the PhysicsNeMo Platform
 
 <a href=https://developer.nvidia.com/physicsnemo>NVIDIA PhysicsNeMo Official Site</a>
 
