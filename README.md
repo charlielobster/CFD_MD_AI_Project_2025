@@ -1,6 +1,6 @@
 # CFD and MD AI Modeling with the PhysicsNeMo Platform
 
-Ostensibly, this is a final project for three CCNY courses, an AI, a Computational Physics, and a Computational Fluid Mechanics course. I also hope to use the experience in support of a funded research opportunity making use of the general skillset. 
+Ostensibly, this is a final project for three CCNY courses, an AI, a Computational Physics, and a Computational Fluid Mechanics course. I also hope to use the experience in support of a funded research opportunity that makes use of the general skillset. 
 
 <a href=https://developer.nvidia.com/physicsnemo>NVIDIA PhysicsNeMo Official Site</a>
 
